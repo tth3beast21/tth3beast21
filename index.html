@@ -28,7 +28,7 @@ function log(t){document.getElementById("log").innerHTML += t + "\n";}
 
 function testIntent(){
 log("Trying Android Settings...");
-location.href="intent://settings#Intent;scheme=android-app;package=com.android.settings;end";
+location.href="javascript:window.open("intent://settings#Intent;scheme=android-app;package=com.android.settings;end","_blank")";
 }
 
 function testChooser(){
